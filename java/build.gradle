@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'io.codef'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.json:json:20211205')
+    implementation("io.codef.api:easycodef-java:1.0.5")
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
